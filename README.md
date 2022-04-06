@@ -4,6 +4,8 @@ Website that uses public API of cryptocurrency exchanges to find lowest buying p
 
 For more details regarding arbitrage and how our website works, visit [this article](https://medium.com/@namrapatel26/arbitrage-in-cryptocurrency-trading-fe5e177c46d2)
 
+Link to website hosted on Heroku [https://coin-compare-17.herokuapp.com/](https://coin-compare-17.herokuapp.com/)
+
 Demo of the website is available [here](https://youtu.be/Kjy9D0oRiWg)
 
 ## To run the website
