@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="icon.png"/>
+  <title>CoinCompare</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css">
+
+  <!-- Include Handlebars from a CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <!-- Include axios from a CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- import the webpage's client-side javascript file (script.js) -->
+  <script src="./script.js" defer></script>
+
+</head>
+
+<body>
+  <div class="">
+    <div class="container-fluid">
+      <div class="row pt-5 mt-5 pb-2">
+        <div class="col-md-12">
+          <h1 class="display-3 text-center font-weight-bold text-white">Welcome to CoinCompare</h1>
+        </div>
+      </div>
+      <form name="coinOptions" action="/" method="post">
+        <div class="row py-2">
+          <div class="col-md-1"></div>
+          <div class="col-md-5 my-3">
+            <div class="btn-group btn-group-toggle btn-block" data-toggle="buttons" id="coinSelector">
+              <label class="btn btn-outline-primary rounded-pill mr-1 border-2 font-weight-bolder">
+                <input type="radio" name="coins" id="BTC" value="BTC" autocomplete="off">
+                <h4 class="font-weight-bolder">BTC</h4>
+              </label>
+              <label class="btn btn-outline-primary rounded-pill mx-1 border-2 font-weight-bolder">
+                <input type="radio" name="coins" id="ETH" value="ETH" autocomplete="off">
+                <h4 class="font-weight-bolder">ETH</h4>
+              </label>
+              <label class="btn btn-outline-primary rounded-pill mx-1 border-2 font-weight-bolder">
+                <input type="radio" name="coins" id="SOL" value="SOL" autocomplete="off">
+                <h4 class="font-weight-bolder">SOL</h4>
+              </label>
+              <label class="btn btn-outline-primary rounded-pill mx-1 border-2 font-weight-bolder">
+                <input type="radio" name="coins" id="ADA" value="ADA" autocomplete="off">
+                <h4 class="font-weight-bolder">ADA</h4>
+              </label>
+              <label class="btn btn-outline-primary rounded-pill ml-1 border-2 font-weight-bolder">
+                <input type="radio" name="coins" id="SHIB" value="SHIB" autocomplete="off">
+                <h4 class="font-weight-bolder">SHIB</h4>
+              </label>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-2 my-3">
+            <div class="input-group input-group-lg my-1">
+              <input type="number" class="form-control" placeholder="1" step="0.001" min="0" name="quantity" value=1>
+            </div>
+          </div>
+          <div class="col-md-2 my-3">
+            <button id="priceBtn" class="btn btn-dark btn-block rounded-pill border border-2 border-light text-light font-weight-bolder">
+              <h4 class="font-weight-bolder">GET PRICE</h4>
+            </button>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
