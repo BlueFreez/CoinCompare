@@ -26,9 +26,3 @@ Use these commands to run the website. It will be available at [http://localhost
 npm install
 npm start
 ```
-
-## Meet the team
-
-- [Vidit Patel](https://www.linkedin.com/in/vidit-patel-216ba8192/)
-- [Namra Patel](https://www.linkedin.com/in/namrapatel26/)
-- [Megh Patel](https://www.linkedin.com/in/megh-patel-1504/)
